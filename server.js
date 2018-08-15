@@ -33,7 +33,7 @@ app.post("/removetask", function (req, res) {
 });
 
 
-app.get('/', (req, res) => {
+app.get('/', function (req, res) {
     res.render('index', { task: task, complete: complete });
 });
 
