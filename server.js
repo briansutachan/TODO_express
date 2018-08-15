@@ -37,6 +37,6 @@ app.get('/', function (req, res) {
     res.render('index', { task: task, complete: complete });
 });
 
-app.listen(8806, () => {
+app.listen(8806, function () {
     console.log('Working in the app')
 });
